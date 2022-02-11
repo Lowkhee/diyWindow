@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<StackPane id="windowRootStackPane" fx:id="windowRootStackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="55.0" minWidth="305.0" prefHeight="600.0" prefWidth="800" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   <BorderPane id="windowBorderPane" fx:id="windowBorderPane">
+   	<top>
+	<VBox id="headerVBox" fx:id="headerVBox" BorderPane.alignment="TOP_CENTER">
+   <children>
+   		<Line id="lineTopResize" fx:id="lineTopResize" endX="100" startX="0" startY="0" stroke="#d71919" strokeWidth="10.0" VBox.vgrow="NEVER" />
+		<AnchorPane id="headerAnchorPane" fx:id="headerAnchorPane" prefHeight="40.0" prefWidth="770.0" VBox.vgrow="NEVER">
+            <children>
+               <Button id="buttonExitApp" fx:id="buttonExitApp" alignment="CENTER" layoutX="713.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" AnchorPane.rightAnchor="5.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@CloseIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               
+               <Button id="buttonMinimize" fx:id="buttonMinimize" alignment="CENTER" layoutX="712.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" AnchorPane.rightAnchor="65.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@MinimizeIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+   			<Button id="buttonFullScreen" fx:id="buttonFullScreen" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" AnchorPane.rightAnchor="125.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@FullScreenIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+   			<Button id="buttonResize" fx:id="buttonResize" alignment="CENTER" layoutX="512.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" AnchorPane.rightAnchor="95.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@ResizeIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+   			<Button id="buttonMaximize" fx:id="buttonMaximize" layoutX="479.0" layoutY="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" AnchorPane.rightAnchor="35.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@MaximizeIcon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+   			<Button id="buttonMenu" fx:id="buttonMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" AnchorPane.leftAnchor="5.0">
+                    <contextMenu>
+						<ContextMenu fx:id="contextMenu" />
+					</contextMenu>
+                     <graphic>
+                        <ImageView id="buttonMenuImage" fx:id="buttonMenuImage" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           
+                        </ImageView>
+                     </graphic>
+            </Button>
+                  <Label id="labelTitle" fx:id="labelTitle" alignment="BOTTOM_LEFT" layoutX="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="100.0" text="" textFill="#2f2c2c" wrapText="true" AnchorPane.leftAnchor="40.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+        </AnchorPane>
+		</children>
+		</VBox>
+   	</top>
+         <bottom>
+            <Line id="lineBottomResize" fx:id="lineBottomResize" endX="100.0" startX="-100.0" stroke="#d71919" strokeWidth="10.0" BorderPane.alignment="BOTTOM_CENTER" />
+         </bottom>
+         <right>
+			<Line id="lineRightResize" fx:id="lineRightResize" endX="0" endY="0" startX="0" startY="100" stroke="#d71919" strokeWidth="10.0" BorderPane.alignment="CENTER_RIGHT" />
+         </right>
+		 <left>
+			<Line id="lineLeftResize" fx:id="lineLeftResize" endX="0" endY="0" startX="0" startY="100" stroke="#d71919" strokeWidth="10.0" BorderPane.alignment="CENTER_LEFT" />
+         </left>
+         <center>
+         </center>
+   </BorderPane>
+   </children>
+</StackPane>

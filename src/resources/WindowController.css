@@ -1,0 +1,119 @@
+.headerAnchorPane
+{
+	-fx-background-color: rgba(55, 55, 55, 1);
+	-fx-background-image: url('../resources/headerImage1.png');
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: contain;
+}
+
+.labelTitle
+{
+	-fx-text-fill: rgba(210, 190, 180, .8);
+}
+
+.buttonMenu 
+{
+    -fx-background-color: rgba(55, 55, 55, .5);
+    -fx-effect: dropshadow( three-pass-box , rgba(122,122,122,0.6), 2, .1 , 0 , 0 );
+}
+
+.buttonMenu:hover 
+{
+    -fx-effect: dropshadow( three-pass-box, rgba(122,122,122, .6), 6, .6 , 0 , 0 );
+}
+
+.buttonMenu:armed 
+{
+	-fx-background-color: rgba(55, 55, 55, .5);
+	-fx-effect: dropshadow(  three-pass-box, slategray, 3, .2 , 0, 0);
+}
+
+/*window control buttons*/
+
+.buttonWindowControl 
+{
+    -fx-background-color: rgba(55, 55, 55, .5);
+    -fx-effect: dropshadow( three-pass-box , rgba(255, 110, 0, .6) , 2, .1 , 0 , 0 );
+}
+
+.buttonWindowControl:hover 
+{
+    -fx-effect: dropshadow( three-pass-box, rgba(122,122,122,0.6) , 6, .6 , 0 , 0 );
+}
+
+.buttonWindowControl:armed 
+{
+	-fx-background-color: rgba(55, 55, 55, .5);
+	-fx-effect: dropshadow(  three-pass-box, slategray, 3, .2 , 0, 0);
+}
+
+/*context menu*/
+.contextMenu  
+{
+    -fx-background-color: rgba(55, 55, 55, 1);
+    -fx-font-family: "MV Boli";
+    -fx-font-size: 16;
+  	-fx-shape: "M 56.00,1.00
+           C 56.00,1.00 56.00,127.00 56.00,127.00
+             56.00,127.00 1.00,127.00 1.00,127.00
+             1.00,127.00 1.00,1.00 1.00,1.00
+             1.00,1.00 56.00,1.00 56.00,1.00 Z
+           M 95.00,1.00
+           C 95.00,1.00 95.00,127.00 95.00,127.00
+             95.00,127.00 60.00,127.00 60.00,127.00
+             60.00,127.00 60.00,1.00 60.00,1.00
+             60.00,1.00 95.00,1.00 95.00,1.00 Z";
+}
+
+.contextMenu:focused  
+{
+    -fx-background-color: rgba(55, 55, 55, 1);
+}
+
+.menu-item 
+{
+	-fx-background-color: rgba(55, 55, 55, .4);
+}
+
+.menu-item .label 
+{
+	-fx-text-fill: rgba(255, 110, 0, .5);
+}
+
+.menu-item:focused .label 
+{
+ 
+  -fx-background-color: rgba(55, 55, 55, .8);
+}
+
+.menu-item .accelerator-text 
+{
+    -fx-text-fill: rgba(255, 110, 0, .5);
+    -fx-padding: 0 0 0 100px; /* top right bottom left */
+}
+
+/* Resize border color/transparency */
+.lineTopResize
+{
+	-fx-stroke-width: 10;
+	-fx-stroke: rgba(255, 110, 0, .1);
+}
+
+.lineLeftResize
+{
+	-fx-stroke-width: 10;
+	-fx-stroke: rgba(255, 110, 0, .1);
+}
+
+.lineBottomResize
+{
+	-fx-stroke-width: 10;
+	-fx-stroke: rgba(255, 110, 0, .1);
+}
+
+.lineRightResize
+{
+	-fx-stroke-width: 10;
+	-fx-stroke: rgba(255, 110, 0, .1);
+}

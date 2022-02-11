@@ -1,0 +1,72 @@
+.button1 
+{
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.6) , 2, .5 , 0 , 0 );
+}
+
+.button1:hover 
+{
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.button1:pressed 
+{
+	-fx-background-color: linear-gradient(#2A50FF, #61a2FF);
+	-fx-effect: innershadow(  gaussian, slategray, 2, 0 , 0, 2);
+}
+  
+.button2 
+{
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.6) , 2, .5 , 0 , 0 );
+}
+
+.button2:hover 
+{
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.button2:pressed 
+{
+	-fx-background-color: linear-gradient(#2A50FF, #61a2FF);
+	-fx-effect: innershadow(  gaussian, slategray, 2, 0 , 0, 2);
+}
+
+.menu-bar
+{
+	-fx-background-color: rgba(143, 188, 143, 1);
+}
+
+.menu  
+{
+    -fx-background-color: rgba(143, 188, 143, .8);
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16;
+}
+
+.menu:focused  
+{
+    -fx-background-color: rgba(143, 188, 143, 1);
+}
+
+.menu-item 
+{
+	-fx-background-color: rgba(143, 188, 143, .4);
+}
+
+.menu-item .label 
+{
+	-fx-text-fill: rgba(0, 0, 0, .5);
+}
+
+.menu-item:focused .label 
+{
+ 
+  -fx-background-color: rgba(143, 188, 143, .8);
+}
+
+.menu-item .accelerator-text 
+{
+    -fx-text-fill: rgba(214, 250, 255, .5);
+    -fx-padding: 0 0 0 100px; /* top right bottom left */
+}
